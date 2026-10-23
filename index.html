@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Serhii Tsyhanenko">
+<meta name="description" content="Lead design engineer for substations 6–750 kV: metering, power quality, automation and protection.">
+<title>Serhii Tsyhanenko – Substation design engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&subset=cyrillic&display=swap">
+<style>
+:root{--paper:#ffffff;--ink:#1a1d21;--mute:#54595f;--line:#d0d3d8;--blue:#1f3a5f;--cu:#1f3a5f;--grid:transparent;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14171b;--ink:#e8eaed;--mute:#a0a5ab;--line:#34393f;--blue:#9db4d3;--cu:#9db4d3;--grid:transparent}}
+:root[data-theme="dark"]{--paper:#14171b;--ink:#e8eaed;--mute:#a0a5ab;--line:#34393f;--blue:#9db4d3;--cu:#9db4d3;--grid:transparent}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;position:relative;background:var(--paper);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans","Segoe UI",Roboto,Arial,sans-serif;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+header b{font-weight:600}
+.lang button{font:inherit;font-size:15px;background:none;border:1px solid var(--line);color:var(--mute);padding:4px 12px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--paper)}
+.lang button:first-child{border-radius:2px 0 0 2px}.lang button+button{border-left:0}.lang button:last-child{border-radius:0 2px 2px 0}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cu);outline-offset:2px}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding:64px 0 56px;align-items:end}
+h1{font-size:clamp(32px,5.4vw,52px);line-height:1.1;font-weight:600;margin:0 0 20px;letter-spacing:-.01em}
+.lead{color:var(--mute);max-width:52ch;margin:0 0 28px;font-size:19px}
+.btn{display:inline-block;background:var(--blue);color:var(--paper);text-decoration:none;padding:12px 22px;border-radius:2px;font-weight:600}
+.note{margin:14px 0 0;color:var(--mute);font-size:15px}
+.tb{border:2px solid var(--ink);background:var(--paper);font:400 14px/1.5 "IBM Plex Mono",Consolas,monospace;width:100%;border-collapse:collapse}
+.tb caption{caption-side:bottom;text-align:right;color:var(--mute);padding-top:6px;font-size:12px}
+.tb th,.tb td{border:1px solid var(--ink);padding:7px 10px;text-align:left;font-weight:400;vertical-align:top}
+.tb th{color:var(--mute);width:42%}
+.tb tr:first-child td{font-weight:600;color:var(--cu);font-size:16px}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 22px;font-weight:600}
+dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:0 32px;max-width:100%}
+dt{font-weight:600;padding:14px 0;border-top:1px solid var(--line)}
+dd{margin:0;padding:14px 0;border-top:1px solid var(--line);color:var(--mute)}
+dt:first-of-type,dt:first-of-type+dd{border-top:0}
+.wire{border-left:3px solid var(--cu);padding-left:16px;margin:0 0 14px;max-width:60ch}
+.note a,footer a{color:var(--blue)}
+.hr{display:flex;gap:10px;align-items:center}
+.th{font:inherit;font-size:16px;line-height:1;background:none;border:1px solid var(--line);color:var(--mute);width:36px;height:32px;border-radius:2px;cursor:pointer}
+.sd{position:absolute;top:0;height:100%;z-index:-1;width:min((100vw - 1000px)/2,260px);pointer-events:none}
+.sd.l{left:0;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent);mask-image:linear-gradient(90deg,#000 55%,transparent)}
+.sd.r{right:0;-webkit-mask-image:linear-gradient(270deg,#000 55%,transparent);mask-image:linear-gradient(270deg,#000 55%,transparent)}
+.pat *{stroke:var(--line);stroke:color-mix(in srgb,var(--line) 65%,var(--mute));fill:none;stroke-width:1.8}
+@media (max-width:1180px){.sd.l{width:100%;opacity:.5;-webkit-mask-image:none;mask-image:none}.sd.r{display:none}}
+.cb-fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;font:inherit;font-weight:600;background:var(--cu);color:var(--paper);border:0;border-radius:2px;padding:12px 20px;cursor:pointer}
+.cb{position:fixed;right:16px;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:5;width:min(360px,calc(100vw - 32px));max-height:min(70vh,520px);display:flex;flex-direction:column;background:var(--paper);border:2px solid var(--ink);border-radius:2px}
+.cb[hidden]{display:none}
+.cb-log{overflow:auto;padding:12px;flex:1;min-height:90px}
+.m{margin:0 0 8px;padding:8px 12px;border-radius:2px;font-size:15px;line-height:1.5;max-width:92%}
+.m.bot{border:1px solid var(--line)}
+.m.me{margin-left:auto;background:var(--blue);color:var(--paper)}
+.cb-chips{display:flex;flex-direction:column;gap:6px;padding:0 12px 10px;overflow:auto}
+.cb-chips button{font:inherit;font-size:14px;text-align:left;background:none;border:1px solid var(--line);color:var(--ink);border-radius:2px;padding:6px 10px;cursor:pointer}
+.cb-ct{padding:10px 12px;border-top:1px solid var(--line);font-size:14px;color:var(--mute);display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.cb-ct a{color:var(--blue);font-weight:600}
+footer{padding:28px 0 36px;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+@media (max-width:720px){.hero{grid-template-columns:1fr;padding-top:40px}dl{grid-template-columns:1fr}dt{padding-bottom:0;border-bottom:0}dd{border-top:0;padding-top:4px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><pattern id="ctl" class="pat" width="200" height="400" patternUnits="userSpaceOnUse">
+<path d="M20 10V110M180 10V110M20 60H70M70 48V72M86 48V72M86 60H130M166 60H180"/><rect x="130" y="48" width="36" height="24"/>
+<path d="M20 130V230M180 130V230M20 180H60M60 180L80 168M84 180H126M72 156V146M64 146H80M154 180H180"/><circle cx="140" cy="180" r="14"/><path d="M130 170L150 190M150 170L130 190"/>
+<path d="M30 250V270M58 250V270M86 250V270M114 250V270M142 250V270M170 250V270M30 300V320M58 300V320M86 300V320M114 300V320M142 300V320M170 300V320"/>
+<rect x="20" y="270" width="20" height="30"/><rect x="48" y="270" width="20" height="30"/><rect x="76" y="270" width="20" height="30"/><rect x="104" y="270" width="20" height="30"/><rect x="132" y="270" width="20" height="30"/><rect x="160" y="270" width="20" height="30"/>
+<path d="M60 340V358M100 340V358M140 340V358M60 382V400M100 382V400M140 382V400M60 358L70 380M100 358L110 380M140 358L150 380"/><path d="M52 370H148" stroke-dasharray="3 3"/>
+</pattern></defs></svg>
+<svg class="sd l" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#ctl)"/></svg>
+<svg class="sd r" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#ctl)"/></svg>
+<div class="wrap">
+<header>
+<b>Serhii Tsyhanenko</b>
+<div class="hr"><div class="lang" role="group" aria-label="Language"><button type="button" data-l="en" aria-pressed="true">EN</button><button type="button" data-l="uk" aria-pressed="false">UA</button><button type="button" data-l="ru" aria-pressed="false">RU</button></div><button id="th" class="th" type="button" aria-label="Dark theme">☾</button></div>
+</header>
+
+<main>
+<div class="hero">
+<div>
+<h1 data-k="h1">Substation secondary systems, designed to be built.</h1>
+<p class="lead" data-k="lead">Lead design engineer with 17 years of experience. Metering, automation, power quality monitoring and protection for substations from 6 to 750 kV.</p>
+<a class="btn" href="https://www.linkedin.com/in/sergey-tsyganenko-044709294/" data-k="cta">Message me on LinkedIn</a>
+<p class="note" data-k="open">Open to freelance and contract work, remote.</p>
+</div>
+<table class="tb">
+<caption data-k="cap">Designer’s title block</caption>
+<tr><td colspan="2" data-k="tb0">Lead design engineer</td></tr>
+<tr><th data-k="tb1">Designer</th><td>Serhii Tsyhanenko</td></tr>
+<tr><th data-k="tb2">Practice since</th><td>2009</td></tr>
+<tr><th data-k="tb3">Voltage</th><td>6–750 kV</td></tr>
+<tr><th data-k="tb4">Standards</th><td>DSTU, DBN</td></tr>
+<tr><th data-k="tb5">Status</th><td data-k="tb6">Open to projects</td></tr>
+</table>
+</div>
+
+<section>
+<h2 data-k="s1">What I design</h2>
+<dl>
+<dt data-k="a1">Metering systems</dt><dd data-k="a1d">Commercial and technical electricity metering, AMR/AMI.</dd>
+<dt data-k="a2">Power quality monitoring</dt><dd data-k="a2d">Measurement points, analysers, communication and cabinet design.</dd>
+<dt data-k="a3">Automation and SCADA</dt><dd data-k="a3d">Substation automation, telecontrol (RTU) and control systems.</dd>
+<dt data-k="a4">Protection and control</dt><dd data-k="a4d">Relay protection schemes.</dd>
+<dt data-k="a5">Design documentation</dt><dd data-k="a5d">Schematics, terminal-block diagrams, cabinet layouts, cable schedules, factory specifications and explanatory notes.</dd>
+</dl>
+</section>
+
+<section>
+<h2 data-k="s2">Projects</h2>
+<p class="wire" data-k="p1"><b>Ukrenergo</b> – transmission system operator, Ukraine.</p>
+<p class="wire" data-k="p2"><b>DTEK</b> – distribution and generation, Ukraine.</p>
+<p class="wire" data-k="p3"><b>System operator, Kazakhstan</b> – substation design.</p>
+<p class="wire" data-k="p4"><b>Thermal power plant, Uzbekistan</b> – design team member.</p>
+</section>
+
+<section>
+<h2 data-k="s3">Equipment I design with</h2>
+<dl>
+<dt data-k="e1">Protection, control, automation</dt><dd>Siemens, ABB, Schneider Electric, GE</dd>
+<dt data-k="e2">Metering</dt><dd>Landis+Gyr, Itron</dd>
+<dt data-k="e3">Industrial communications</dt><dd>Moxa, Advantech</dd>
+<dt data-k="e4">Terminals and components</dt><dd>Weidmüller, Phoenix Contact</dd>
+</dl>
+</section>
+
+<section>
+<h2 data-k="s4">Work with me</h2>
+<p class="lead" data-k="c1">Tell me about your substation, metering or automation project. I reply in Ukrainian, Russian or English.</p>
+<a class="btn" href="https://www.linkedin.com/in/sergey-tsyganenko-044709294/" data-k="cta">Message me on LinkedIn</a>
+<p class="note"><a href="mailto:stsyganenko.sep@gmail.com">stsyganenko.sep@gmail.com</a></p>
+</section>
+</main>
+<footer>© 2026 Serhii Tsyhanenko · <a href="mailto:stsyganenko.sep@gmail.com">stsyganenko.sep@gmail.com</a></footer>
+</div>
+
+<button id="cb-open" class="cb-fab" type="button" aria-expanded="false" aria-controls="cb" data-k="cbo">Ask a question</button>
+<div id="cb" class="cb" role="dialog" aria-label="Quick answers" hidden>
+<div id="cb-log" class="cb-log" aria-live="polite"><p class="m bot" data-k="g">Hello! Pick a question or contact me directly.</p></div>
+<div class="cb-chips">
+<button type="button" data-q="r1" data-k="q1">What do you design?</button>
+<button type="button" data-q="r2" data-k="q2">Which equipment do you work with?</button>
+<button type="button" data-q="r3" data-k="q3">Do you work remotely on contract?</button>
+<button type="button" data-q="r4" data-k="q4">Which standards do you design to?</button>
+<button type="button" data-q="r5" data-k="q5">How do I start a project?</button>
+</div>
+<div class="cb-ct"><span data-k="ct">Prefer to talk directly?</span><a href="https://t.me/Austin_Powers86">Telegram</a><a href="mailto:stsyganenko.sep@gmail.com?subject=Project%20inquiry">Email</a></div>
+</div>
+
+<script>
+var RU={
+h1:"Вторичные системы подстанций, спроектированные так, чтобы их можно было построить.",
+lead:"Ведущий инженер-проектировщик, 17 лет опыта. Учёт электроэнергии, автоматизация, контроль качества электроэнергии и РЗА для подстанций 6–750 кВ.",
+cta:"Написать в LinkedIn",open:"Открыт к фриланс-проектам, удалённо.",
+cap:"Основная надпись проектировщика",tb0:"Ведущий инженер-проектировщик",tb1:"Проектировщик",tb2:"Практика с",tb3:"Напряжение",tb4:"Нормы",tb5:"Статус",tb6:"Открыт к проектам",
+s1:"Что проектирую",
+a1:"Системы учёта",a1d:"Коммерческий и технический учёт электроэнергии, АСКОЕ, AMR/AMI.",
+a2:"Контроль качества электроэнергии",a2d:"Точки измерения, анализаторы, связь и компоновка шкафов.",
+a3:"Автоматизация и SCADA",a3d:"Автоматизация подстанций, телемеханика (RTU), системы управления.",
+a4:"Релейная защита и автоматика",a4d:"Схемы РЗА.",
+a5:"Проектная документация",a5d:"Схемы, схемы клеммных рядов, компоновка шкафов, кабельные журналы, задания заводу и пояснительные записки.",
+s2:"Проекты",
+p1:"<b>Укренерго</b> – системный оператор передачи, Украина.",p2:"<b>ДТЭК</b> – распределение и генерация, Украина.",
+p3:"<b>Системный оператор, Казахстан</b> – проектирование подстанций.",p4:"<b>ТЭС, Узбекистан</b> – участие в разработке проекта.",
+path:"С 2009 года: начинал с релейной защиты, затем перешёл на учёт электроэнергии, автоматизацию и контроль качества. Веду вторичные системы подстанции целиком.",
+s3:"С каким оборудованием работаю",e1:"РЗА, управление, автоматизация",e2:"Учёт электроэнергии",e3:"Промышленная связь",e4:"Клеммы и компоненты",
+s4:"Работа со мной",c1:"Расскажите о вашем проекте подстанции, учёта или автоматизации. Отвечаю на украинском, русском или английском.",
+cbo:"Задать вопрос",g:"Здравствуйте! Выберите вопрос или свяжитесь со мной напрямую.",q1:"Что вы проектируете?",q2:"С каким оборудованием работаете?",q3:"Работаете удалённо и по договору?",q4:"По каким нормам проектируете?",q5:"Как начать проект?",ct:"Лучше напрямую?",
+r1:"Системы учёта электроэнергии, контроль качества электроэнергии, автоматизацию подстанций и SCADA, РЗА, а также полный комплект проектной документации для подстанций 6–750 кВ.",
+r2:"Siemens, ABB, Schneider Electric, GE, Landis+Gyr, Itron, Moxa, Advantech, Weidmüller и Phoenix Contact.",
+r3:"Да. Беру фриланс-проекты и работу по договору удалённо, отвечаю на украинском, русском и английском.",
+r4:"По украинским нормам (ДСТУ, ДБН) и требованиям системного оператора на каждом проекте.",
+r5:"Напишите кратко, что за подстанция и что нужно: учёт, автоматизация, защита или документация. Я отвечу уточняющими вопросами и следующими шагами."};
+var UK={
+h1:"Вторинні системи підстанцій, спроєктовані так, щоб їх можна було збудувати.",
+lead:"Провідний інженер-проєктувальник, 17 років досвіду. Облік електроенергії, автоматизація, контроль якості електроенергії та РЗА для підстанцій 6–750 кВ.",
+cta:"Написати в LinkedIn",open:"Відкритий до фріланс-проєктів, дистанційно.",
+cap:"Основний напис проєктувальника",tb0:"Провідний інженер-проєктувальник",tb1:"Проєктувальник",tb2:"Практика з",tb3:"Напруга",tb4:"Норми",tb5:"Статус",tb6:"Відкритий до проєктів",
+s1:"Що проєктую",
+a1:"Системи обліку",a1d:"Комерційний і технічний облік електроенергії, АСКОЕ, AMR/AMI.",
+a2:"Контроль якості електроенергії",a2d:"Точки вимірювання, аналізатори, зв’язок і компонування шаф.",
+a3:"Автоматизація та SCADA",a3d:"Автоматизація підстанцій, телемеханіка (RTU), системи керування.",
+a4:"Релейний захист і автоматика",a4d:"Схеми РЗА.",
+a5:"Проєктна документація",a5d:"Схеми, схеми клемних рядів, компонування шаф, кабельні журнали, завдання заводу та пояснювальні записки.",
+s2:"Проєкти",
+p1:"<b>Укренерго</b> – системний оператор передачі, Україна.",p2:"<b>ДТЕК</b> – розподіл і генерація, Україна.",
+p3:"<b>Системний оператор, Казахстан</b> – проєктування підстанцій.",p4:"<b>ТЕС, Узбекистан</b> – участь у розробленні проєкту.",
+path:"З 2009 року: починав із релейного захисту, потім перейшов на облік електроенергії, автоматизацію та контроль якості. Веду вторинні системи підстанції повністю.",
+s3:"З яким обладнанням працюю",e1:"РЗА, керування, автоматизація",e2:"Облік електроенергії",e3:"Промисловий зв’язок",e4:"Клеми та компоненти",
+s4:"Співпраця",c1:"Розкажіть про ваш проєкт підстанції, обліку чи автоматизації. Відповідаю українською, російською або англійською.",
+cbo:"Поставити запитання",g:"Вітаю! Оберіть запитання або зв’яжіться зі мною напряму.",q1:"Що ви проєктуєте?",q2:"З яким обладнанням працюєте?",q3:"Працюєте дистанційно та за договором?",q4:"За якими нормами проєктуєте?",q5:"Як розпочати проєкт?",ct:"Краще напряму?",
+r1:"Системи обліку електроенергії, контроль якості електроенергії, автоматизацію підстанцій і SCADA, РЗА, а також повний комплект проєктної документації для підстанцій 6–750 кВ.",
+r2:"Siemens, ABB, Schneider Electric, GE, Landis+Gyr, Itron, Moxa, Advantech, Weidmüller та Phoenix Contact.",
+r3:"Так. Беру фріланс-проєкти та роботу за договором дистанційно, відповідаю українською, російською та англійською.",
+r4:"За українськими нормами (ДСТУ, ДБН) і вимогами системного оператора на кожному проєкті.",
+r5:"Напишіть коротко, що за підстанція і що потрібно: облік, автоматизація, захист чи документація. Я відповім уточнювальними запитаннями та наступними кроками."};
+var TR={ru:RU,uk:UK};
+var els=document.querySelectorAll("[data-k]");
+els.forEach(function(e){e.dataset.en=e.innerHTML});
+function setLang(l){
+els.forEach(function(e){var v=TR[l]?TR[l][e.dataset.k]:e.dataset.en;if(v)e.innerHTML=v});
+document.documentElement.lang=l;
+document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
+try{localStorage.setItem("lang",l)}catch(x){}}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.l)})});
+var EN={r1:"Metering systems, power quality monitoring, substation automation and SCADA, protection and control, and the full design documentation for substations from 6 to 750 kV.",r2:"Siemens, ABB, Schneider Electric, GE, Landis+Gyr, Itron, Moxa, Advantech, Weidmüller and Phoenix Contact.",r3:"Yes. I take freelance and contract design work remotely, and reply in Ukrainian, Russian or English.",r4:"Ukrainian standards (DSTU, DBN) and the requirements of the system operator on each project.",r5:"Send me a short description of the substation and what you need: metering, automation, protection or documentation. I’ll reply with follow-up questions and next steps."};
+var cbLog=document.getElementById("cb-log"),cbPanel=document.getElementById("cb"),cbTog=document.getElementById("cb-open");
+cbTog.addEventListener("click",function(){var o=cbPanel.hidden;cbPanel.hidden=!o;cbTog.setAttribute("aria-expanded",o)});
+function cbAdd(c,t){var p=document.createElement("p");p.className="m "+c;p.textContent=t;cbLog.appendChild(p);cbLog.scrollTop=cbLog.scrollHeight}
+document.querySelectorAll(".cb-chips button").forEach(function(b){b.addEventListener("click",function(){var l=document.documentElement.lang;cbAdd("me",b.textContent);cbAdd("bot",TR[l]?TR[l][b.dataset.q]:EN[b.dataset.q])})});
+var th=document.getElementById("th");
+function isDark(){var t=document.documentElement.dataset.theme;return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+function paint(){var d=isDark();th.textContent=d?"☀":"☾";th.setAttribute("aria-label",d?"Light theme":"Dark theme")}
+th.addEventListener("click",function(){var n=isDark()?"light":"dark";document.documentElement.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(x){}paint()});
+try{var st=localStorage.getItem("theme");if(st)document.documentElement.dataset.theme=st}catch(x){}
+paint();
+function fit(){var w=document.documentElement.clientWidth,s=1;if(w<=1180){s=w/(Math.max(2,Math.round(w/200))*200)}document.getElementById("ctl").setAttribute("patternTransform","scale("+s+")")}
+fit();addEventListener("resize",fit);
+var s=null;try{s=localStorage.getItem("lang")}catch(x){}
+if(s==="ru"||s==="uk")setLang(s);
+</script>
+</body>
+</html>
