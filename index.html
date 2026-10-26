@@ -124,6 +124,11 @@ h2{font:300 clamp(28px,3.4vw,38px)/1.15 var(--f-display);letter-spacing:-.01em;m
 
 .contact .wrap{padding-block:72px}
 .contact h2{margin-bottom:16px}
+.soc{display:flex;gap:12px;margin-top:32px}
+.si{width:56px;height:56px;display:grid;place-items:center;border:1px solid var(--hl);border-radius:4px;color:var(--hf);transition:background .15s,border-color .15s,color .15s}
+.si svg{width:42px;height:42px;fill:currentColor}
+.si svg.ln{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+.si:hover{background:var(--accent);border-color:var(--accent);color:#1a1205}
 .mail{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:24px 0 0}
 .mail span{font-weight:600;overflow-wrap:anywhere}
 .mail button{font:inherit;font-size:14px;background:none;border:1px solid var(--hl);color:var(--hm);border-radius:2px;padding:4px 12px;cursor:pointer}
@@ -233,9 +238,10 @@ footer .wrap{padding-block:28px 40px;color:var(--mute);font-size:15px}
 <section class="band contact" id="contact"><div class="wrap">
 <h2 data-k="s4">Work with me</h2>
 <p class="lead" data-k="c1">Tell me about your substation, metering or automation project. I reply in Ukrainian, Russian or English.</p>
-<div class="cta">
-<a class="btn pri" href="https://www.linkedin.com/in/sergey-tsyganenko-044709294/" data-k="cta">Message me on LinkedIn</a>
-<a class="btn gh" href="https://t.me/Austin_Powers86">Telegram</a>
+<div class="soc">
+<a class="si" href="https://www.linkedin.com/in/sergey-tsyganenko-044709294/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="15.2" r="3.3"/><rect x="13.2" y="20.4" width="5.6" height="15.6"/><path d="M22.6 20.4h5.4v2.3c.9-1.6 2.8-2.8 5.5-2.8 4.5 0 6.3 2.7 6.3 7.5V36h-5.6v-7.9c0-2.4-.7-3.8-2.8-3.8-2.2 0-3.2 1.6-3.2 3.9V36h-5.6z"/></svg></a>
+<a class="si" href="https://t.me/Austin_Powers86" aria-label="Telegram" title="Telegram"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10.6 23.2 36.4 13.3c1.2-.45 2.25.29 1.86 2.1l-4.4 20.7c-.33 1.47-1.2 1.83-2.43 1.14l-6.7-4.94-3.24 3.11c-.36.36-.66.66-1.35.66l.48-6.84 12.45-11.25c.54-.48-.12-.75-.84-.27L16.84 27.1l-6.63-2.07c-1.44-.45-1.47-1.44.39-1.83z"/></svg></a>
+<a class="si" href="mailto:stsyganenko.sep@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 48 48" aria-hidden="true" class="ln"><rect x="11" y="15" width="26" height="18" rx="2.2"/><path d="M12 16.5 24 25.8 36 16.5"/></svg></a>
 </div>
 <p class="mail"><span id="addr">stsyganenko.sep@gmail.com</span><button id="cp" type="button" data-k="copy">Copy</button></p>
 </div></section>
