@@ -35,7 +35,8 @@
 :root[data-theme="dark"]{--bg:#0c131b;--fg:#e8eef4;--mute:#9aa9b8;--line:#223243;--ln:#3b5068;--tile:#132030;--accent:#f0b13a;--btn:#e8eef4;--btn-fg:#0c131b;--on:#9a4f48;--off:#3f7a55;--hb:#070d14;--hf:#eef2f6;--hm:#93a5b7;--hl:#22324a;color-scheme:dark}
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
-html{scroll-behavior:smooth}
+html.ready{scroll-behavior:smooth}
+html,body{overflow-anchor:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;position:relative;overflow-x:hidden;overflow-x:clip;-webkit-tap-highlight-color:transparent;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--f-body)}
@@ -255,6 +256,10 @@ footer .wrap{padding-block:28px 40px;color:var(--mute);font-size:15px}
 </div>
 
 <script>
+try{if("scrollRestoration" in history)history.scrollRestoration="manual"}catch(e){}
+if(!location.hash){scrollTo(0,0);addEventListener("load",function(){scrollTo(0,0)})}
+addEventListener("load",function(){setTimeout(function(){document.documentElement.classList.add("ready")},300)});
+
 var D={en:{
 r1:"Metering systems, power quality monitoring, substation automation and SCADA, protection and control, and the full design documentation for substations from 6 to 750 kV.",
 r2:"Siemens, ABB, Schneider Electric, GE, Landis+Gyr, Itron, Moxa, Advantech, Weidmüller and Phoenix Contact.",
