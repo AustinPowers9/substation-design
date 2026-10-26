@@ -119,6 +119,11 @@ h2{font:300 clamp(28px,3.4vw,38px)/1.15 var(--f-display);letter-spacing:-.01em;m
 .eqp div{display:flex;flex-direction:column;gap:6px;min-width:0}
 .eqp span{font-size:14px;color:var(--mute)}
 .eqp b{font:500 18px/1.35 var(--f-display)}
+.sw{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);margin-top:24px;padding-top:24px}
+.sw span{font-size:14px;color:var(--mute)}
+.sw ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:14px 32px}
+.sw li{display:flex;align-items:center;gap:10px;font:500 18px/1.3 var(--f-display)}
+.sw li svg{width:34px;height:34px;flex:none;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
 @media (max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.eqp{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}.tiles,.refs,.eqp{grid-template-columns:minmax(0,1fr)}.tile.wide{grid-column:auto}.sec{padding-block:56px}.hero{padding-top:44px}.facts{grid-template-columns:1fr}}
 
@@ -233,6 +238,7 @@ footer .wrap{padding-block:28px 40px;color:var(--mute);font-size:15px}
 <div><span data-k="e3">Industrial communications</span><b>Moxa, Advantech</b></div>
 <div><span data-k="e4">Terminals and components</span><b>Weidm&uuml;ller, Phoenix Contact</b></div>
 </div>
+<div class="sw"><span data-k="e5">Design software</span><ul><li><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="5" y="7" width="30" height="26" rx="1.5"/><path d="M23 27h12M23 27v6"/><circle cx="14" cy="17" r="4"/><path d="M14 17h12M26 13v8M5 27h18"/></svg>AutoCAD</li><li><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="5" y="6" width="11" height="8" rx="1"/><rect x="24" y="6" width="11" height="8" rx="1"/><rect x="14.5" y="26" width="11" height="8" rx="1"/><path d="M10.5 14v6h19v-6M20 20v6"/></svg>Microsoft Visio</li><li><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="5" y="8" width="30" height="24" rx="1.5"/><path d="M5 14h30M5 20h30M5 26h30M14 8v24M24.5 8v24"/></svg>Excel</li><li><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M10 5h14l6 6v24H10z"/><path d="M24 5v6h6M14 17h12M14 22h12M14 27h8"/></svg>Word</li></ul></div>
 </div></section>
 
 <section class="band contact" id="contact"><div class="wrap">
@@ -296,7 +302,7 @@ p2:"ДТЭК",p2d:"Распределение и генерация, Украи�
 p3:"Системный оператор, Казахстан",p3d:"Проектирование подстанций",
 p4:"ТЭС, Узбекистан",p4d:"Участие в разработке проекта",
 s3:"С каким оборудованием работаю",
-e1:"РЗА, управление, автоматизация",e2:"Учёт электроэнергии",e3:"Промышленная связь",e4:"Клеммы и компоненты",
+e1:"РЗА, управление, автоматизация",e2:"Учёт электроэнергии",e3:"Промышленная связь",e4:"Клеммы и компоненты",e5:"Программы для проектирования",
 s4:"Работа со мной",c1:"Расскажите о вашем проекте подстанции, учёта или автоматизации. Отвечаю на украинском, русском или английском.",
 copy:"Копировать",copied:"Скопировано",
 cbo:"Задать вопрос",g:"Здравствуйте! Выберите вопрос или свяжитесь со мной напрямую.",
@@ -324,7 +330,7 @@ p2:"ДТЕК",p2d:"Розподіл і генерація, Україна",
 p3:"Системний оператор, Казахстан",p3d:"Проєктування підстанцій",
 p4:"ТЕС, Узбекистан",p4d:"Участь у розробленні проєкту",
 s3:"З яким обладнанням працюю",
-e1:"РЗА, керування, автоматизація",e2:"Облік електроенергії",e3:"Промисловий зв’язок",e4:"Клеми та компоненти",
+e1:"РЗА, керування, автоматизація",e2:"Облік електроенергії",e3:"Промисловий зв’язок",e4:"Клеми та компоненти",e5:"Програми для проєктування",
 s4:"Співпраця",c1:"Розкажіть про ваш проєкт підстанції, обліку чи автоматизації. Відповідаю українською, російською або англійською.",
 copy:"Копіювати",copied:"Скопійовано",
 cbo:"Поставити запитання",g:"Вітаю! Оберіть запитання або зв’яжіться зі мною напряму.",
