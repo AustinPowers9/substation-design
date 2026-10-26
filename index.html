@@ -256,8 +256,13 @@ footer .wrap{padding-block:28px 40px;color:var(--mute);font-size:15px}
 </div>
 
 <script>
-try{if("scrollRestoration" in history)history.scrollRestoration="manual"}catch(e){}
-if(!location.hash){scrollTo(0,0);addEventListener("load",function(){scrollTo(0,0)})}
+(function(){try{if("scrollRestoration" in history)history.scrollRestoration="manual"}catch(e){}
+try{if(location.hash)history.replaceState(null,"",location.pathname+location.search)}catch(e){}
+var used=false;function u(){used=true}
+["touchstart","wheel","keydown","mousedown"].forEach(function(t){addEventListener(t,u,{passive:true,once:true})});
+function top(){if(!used)scrollTo(0,0)}
+top();addEventListener("DOMContentLoaded",top);addEventListener("load",function(){top();setTimeout(top,120);setTimeout(top,500)});
+addEventListener("pageshow",function(e){if(e.persisted)top()})})();
 addEventListener("load",function(){setTimeout(function(){document.documentElement.classList.add("ready")},300)});
 
 var D={en:{
